@@ -16,22 +16,22 @@ class Slingshot {
     }
         
    display(){
-       image(this.sling1,100,500);
-       image(this.sling2,70,500);
+       image(this.sling1,150,500);
+       image(this.sling2,120,500);
        if(this.sling.bodyA){
        var pointA=this.sling.bodyA.position;
        var pointB=this.pointB;
        stroke(48,22,8);
        if(pointA.x<70){
        strokeWeight(5);
-       line (pointA.x,pointA.y,pointB.x+25,pointB.y-10);
-       line(pointA.x,pointA.y,pointB.x+70,pointB.y-15);
+       line (pointA.x,pointA.y,pointB.x+75,pointB.y-10);
+       line(pointA.x,pointA.y,pointB.x+120,pointB.y-15);
        image(this.sling3,pointA.x-30,pointA.y-10,15,30);
        }
        else{
         strokeWeight(3);
-        line (pointA.x+30,pointA.y,pointB.x+25,pointB.y-10);
-        line(pointA.x+30,pointA.y,pointB.x+70,pointB.y-15);
+        line (pointA.x+30,pointA.y,pointB.x+75,pointB.y-10);
+        line(pointA.x+30,pointA.y,pointB.x+120,pointB.y-15);
         image(this.sling3,pointA.x+25,pointA.y-10,15,30);  
        }
        }
