@@ -1,3 +1,14 @@
+var A1=[1,2,3,4,5];
+console.log(A1);
+console.log(A1[2]);
+A1.push("hello");
+console.log(A1);
+A1.pop();
+console.log(A1);
+var A2=[[1,2,3],[4,5,6],[7,8,9,10]];
+console.log(A2);
+console.log(A2[1][1]);
+console.log(A2[2][1]);
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -42,9 +53,6 @@ function setup(){
 function draw(){
     background(backgroundImage);
     Engine.update(engine);
-    console.log(box2.body.position.x);
-    console.log(box2.body.position.y);
-    console.log(box2.body.angle);
     box1.display();
     box2.display();
     ground.display();
