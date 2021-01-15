@@ -7,8 +7,10 @@ class Bird extends Base{
     }
     display(){
       super.display();
+      if(this.body.velocity.x>10&&this.body.position.x>100){
       var position=[this.body.position.x,this.body.position.y];
       this.path.push(position);
+      }
       for(var i=0;i<this.path.length;i=i+1){
         image(this.smokeimage,this.path[i][0],this.path[i][1]);
       }
